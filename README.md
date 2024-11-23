@@ -1,6 +1,10 @@
 # stock market analysis
 
-	he Stock Analysis WEB/App provides insights into stock-related news and recommends whether to buy or sell based on sentiment analysis. The 	application fetches real-time news using APIs, analyzes the sentiment of the news, and displays the results to the user. It supports both 	android (via APK) and Windows (via EXE).
+	he Stock Analysis WEB/App provides insights into stock-related news 
+	and recommends whether to buy or sell based on sentiment analysis. 
+	The application fetches real-time news using APIs, analyzes the 
+	sentiment of the news, and displays the results to the user. 
+	It supports both android (via APK) and Windows (via EXE).
 
 #Features
 	Fetch real-time stock-related news articles based on a company name.
@@ -10,5 +14,10 @@
 		Android (APK).
 		Windows (EXE).
 
+#Flow
+	1. 
 
-
+#Contact
+For any queries, contact:
+Your Name: Dev
+Email: devashishranjan7@gmail.com
