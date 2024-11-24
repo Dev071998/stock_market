@@ -1,6 +1,6 @@
 from input_handler import get_stock_input
 from data_fetcher import fetch_stock_data
-# from data_analyzer import analyze_stock_data
+from data_analyzer import analyze_stock_data
 # from recommendation import recommend_action
 from data_saver import save_stock_data
 
@@ -20,7 +20,7 @@ def main():
 
         # Step 4: Analyze stock data
         print("Analyzing stock data...")
-        # analysis = analyze_stock_data(stock_data)
+        analysis = analyze_stock_data(stock_data)
 
         # Step 5: Generate recommendation
         # recommendation = recommend_action(analysis)
@@ -28,10 +28,11 @@ def main():
         # Step 6: Display results
         print("\n--- Analysis Summary ---")
         print(f"Stock: {stock_symbol}")
-        # print(f"Current Price: {analysis['current_price']:.2f}")
-        # print(f"Day High: {analysis['day_high']:.2f}")
-        # print(f"Day Low: {analysis['day_low']:.2f}")
-        # print(f"Volume: {analysis['volume']}")
+        print(f"Current Price: {analysis['current_price']:.2f}")
+        print(f"Day High: {analysis['daily_high']:.2f}")
+        print(f"Day Low: {analysis['daily_low']:.2f}")
+        print(f"Volume: {analysis['totalTradedVolume']}")
+        
         # print(f"Recommendation: {recommendation}")
     except Exception as e:
         print(f"Error: {e}")
