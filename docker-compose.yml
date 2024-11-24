@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    container_name: stock_analysis_app
+    ports:
+      - "5000:5000"  # Map the container port to your host (if needed)
+    volumes:
+      - .:/app       # Optional: Mount the local directory for development
+    environment:
+      - API_KEY=your_api_key  # Pass environment variables
